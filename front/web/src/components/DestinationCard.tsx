@@ -1,0 +1,32 @@
+import Image from "next/image";
+
+interface DestinationCardProps {
+    title: string;
+    country: string;
+    image: string;
+    alt: string;
+    description: string;
+    brochure: string;
+};
+
+export function DestinationCard({ title, country, image, alt, description, brochure }: DestinationCardProps) {
+    return (
+        <div className="rounded-xl overflow-hidden border border-[#E2E8F0] bg-white shadow-sm">
+            <div className="relative h-64 w-full">
+                <Image src={image} alt={alt} fill className="object-cover" />
+            </div>
+
+            <div className="p-6">
+                <h3 className="text-2xl font-semibold mb-1 text-[#020817]">{title}</h3>
+                <p className="text-sm text-[#64748B] mb-4">{country}</p>
+                <p className="text-[#020817]">{description}</p>
+            </div>
+
+            <div className="p-6 pt-0">
+                <a href={brochure} download className="block text-center w-full border border-gray-300 text-sm py-2 px-4 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+                    Ver detalles
+                </a>
+            </div>
+        </div>
+    )
+}

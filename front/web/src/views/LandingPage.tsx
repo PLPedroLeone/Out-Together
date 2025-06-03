@@ -1,5 +1,7 @@
 import { AboutCard } from "@/components/AboutCard";
+import { DestinationCard } from "@/components/DestinationCard";
 import { aboutData } from "@/data/aboutData";
+import { destinationData } from "@/data/destinationData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -53,6 +55,21 @@ export default function LandingPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {aboutData.map((item, idx) => (
                             <AboutCard key={idx} {...item} />
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section id="destinations" className="py-20 bg-[#F1F5F9]">
+                <div className="container px-21 mx-auto px-4">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">Nuestros Destinos</h2>
+                        <p className="text-lg text-[#64748B] max-w-2xl mx-auto">Descubre los increíbles lugares donde podrás trabajar, conectar y disfrutar con Out Together.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {destinationData.map((item) => (
+                            <DestinationCard key={item.title} {...item} />
                         ))}
                     </div>
                 </div>
