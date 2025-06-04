@@ -1,8 +1,11 @@
 import { AboutCard } from "@/components/AboutCard";
 import { DestinationCard } from "@/components/DestinationCard";
+import { Footer } from "@/components/Footer";
 import { RegisterForm } from "@/components/Form";
+import { TestimonialCard } from "@/components/TestimonialCard";
 import { aboutData } from "@/data/aboutData";
 import { destinationData } from "@/data/destinationData";
+import { testimonialsData } from "@/data/testimonialsData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -81,7 +84,7 @@ export default function LandingPage() {
                     <div className="max-w-3xl mx-auto">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">¿Te interesa la experiencia?</h2>
-                            <p className="text-lg text-[#64748B]">
+                            <p className="text-lg text-[#64748B] max-w-2xl mx-auto">
                                 Completá el formulario y te enviaremos toda la información sobre nuestras próximas salidas.
                             </p>
                         </div>
@@ -94,6 +97,38 @@ export default function LandingPage() {
                     </div>
                 </div>
             </section>
+
+            <section id="testimonials" className="py-20 bg-[#F1F5F9]">
+                <div className="container px-21 mx-auto px-4">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">Lo que dicen nuestros viajeros</h2>
+                        <p className="text-lg text-[#64748B] max-w-2xl mx-auto">Experiencias reales de personas que ya vivieron Out Together.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-12">
+                        {testimonialsData.map((testimonial, index) => (
+                            <TestimonialCard key={index} {...testimonial}/>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section id="cta" className=" min-h-[356px] py-20 bg-[#0369A0] text-primary-foreground">
+                <div className="container mx-auto px-4 text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para una nueva forma de trabajar?</h2>
+                    <p className="text-xl mb-10 max-w-2xl mx-auto">
+                        Únete a nuestra comunidad de nómadas digitales y transforma tu experiencia de trabajo remoto.
+                    </p>
+                    <Link
+                        href="#register"
+                        className="rounded-sm bg-[#F1F5F9] px-8 py-3.5 text-sm font-medium text-black hover:bg-[#e2e8f0] text-black transition-colors"
+                    >
+                        Sumate a la comunidad
+                    </Link>
+                </div>
+            </section>
+
+            <Footer />
         </>      
     )
 } 
