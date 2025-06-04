@@ -1,5 +1,6 @@
 import { AboutCard } from "@/components/AboutCard";
 import { DestinationCard } from "@/components/DestinationCard";
+import { RegisterForm } from "@/components/Form";
 import { aboutData } from "@/data/aboutData";
 import { destinationData } from "@/data/destinationData";
 import Image from "next/image";
@@ -71,6 +72,25 @@ export default function LandingPage() {
                         {destinationData.map((item) => (
                             <DestinationCard key={item.title} {...item} />
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            <section id="register" className="py-20 bg-white">
+                <div className="container px-21 mx-auto px-4">
+                    <div className="max-w-3xl mx-auto">
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">¿Te interesa la experiencia?</h2>
+                            <p className="text-lg text-[#64748B]">
+                                Completá el formulario y te enviaremos toda la información sobre nuestras próximas salidas.
+                            </p>
+                        </div>
+
+                        <div className="rounded-xl border border-[#E2E8F0] bg-white shadow-sm p-6">
+                            <h3 className="text-2xl font-semibold mb-1 text-[#020817]">Solicitar información</h3>
+                            <p className="text-sm text-[#64748B] mb-6">Completá tus datos y nos pondremos en contacto contigo.</p>
+                            <RegisterForm />
+                        </div>
                     </div>
                 </div>
             </section>
