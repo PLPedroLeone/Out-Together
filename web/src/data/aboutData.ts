@@ -24,8 +24,8 @@ export const aboutData: AboutItem[] = [
     },
     {
         icon: Users,
-        title: "Grupos Reducidos",
-        description: "Máximo 10 personas por grupo para garantizar una experiencia personalizada y de calidad.",
+        title: "Comunidad",
+        description: "Grupos reducidos para garantizar una experiencia personalizada y de calidad.",
     },
     {
         icon: Calendar,

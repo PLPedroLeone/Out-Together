@@ -63,7 +63,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row gap-8 text-center md:text-left">
             <div>
               <h3 className="font-semibold mb-2">Contacto</h3>
-              <p className="text-sm text-[#64748B]">info@outtogether.com</p>
+              <p className="text-sm text-[#64748B]">outtogetherpfm@gmail.com</p>
               <p className="text-sm text-[#64748B]">+54 11 1234-5678</p>
             </div>
             <div>

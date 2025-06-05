@@ -49,21 +49,6 @@ export function RegisterForm() {
             </div>
 
             <div className="space-y-2 text-sm">
-                <label htmlFor="workType" className="block font-medium text-[#02017] mb-3">¿Trabajás freelance o en relación de dependencia?</label>
-                <select
-                    id="workType"
-                    {...register("workType")}
-                    className="w-full border border-[#E2E8F0] rounded-md p-2"
-                >
-                    <option value="">Selecciona una opción</option>
-                    <option value="freelance">Freelance</option>
-                    <option value="employed">Relación de dependencia</option>
-                    <option value="both">Ambos</option>
-                </select>
-                {errors.workType && <p className="text-red-500 text-xs">{errors.workType.message}</p>}
-            </div>
-
-            <div className="space-y-2 text-sm">
                 <label htmlFor="destination" className="block mb-3 font-medium text-[#02017]">¿Qué destino te gustaría?</label>
                 <select
                     id="destination"

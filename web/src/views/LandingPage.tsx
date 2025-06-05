@@ -1,10 +1,11 @@
 import { AboutCard } from "@/components/AboutCard";
-import { DestinationCard } from "@/components/DestinationCard";
+import { AboutUsCard } from "@/components/AboutUsCard";
+import DestinationsCarousel from "@/components/DestinationsCarousel";
 import { Footer } from "@/components/Footer";
 import { RegisterForm } from "@/components/Form";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { aboutData } from "@/data/aboutData";
-import { destinationData } from "@/data/destinationData";
+import { aboutUsData } from "@/data/aboutUsData";
 import { testimonialsData } from "@/data/testimonialsData";
 import Image from "next/image";
 import Link from "next/link";
@@ -47,7 +48,32 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="about" className="py-20 bg-white">
+            <section id="about-us" className="py-20 bg-white">
+                <div className="container px-21 mx-auto px-4">
+                    <div className="text-center mb-16 max-w-5xl mx-auto">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#020817]">Quiénes Somos</h2>
+                        <p className="text-lg text-[#64748B]">
+                            Nuestro servicio de viaje que combina trabajo, ocio y comunidad ayuda a trabajadores remotos e híbridos que trabajan con frecuencia en casa, pero también a quienes quieren cambiar de entorno, conectarse con otros y mantener su bienestar. Organizamos viajes de corta duración a destinos naturales —nacionales o internacionales— con alojamiento confortable, espacios de coworking bien equipados, y la planificación de eventos de networking y actividades de bienestar/recreativas en grupos reducidos. <br /><br />
+                            Nuestro diferencial es crear comunidad: una experiencia que combina productividad, descanso e inspiración en un entorno socialmente activo.
+                        </p>
+                    </div>
+
+                    <div className="text-center mb-12">
+                        <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#020817]">Nuestro equipo</h3>
+                        <p className="text-[#64748B] max-w-2xl mx-auto">
+                            Somos un grupo de amigos que se conocieron en el EMBA y decidieron transformar la manera de trabajar viajando.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">
+                        {aboutUsData.map((person) => (
+                            <AboutUsCard key={person.name} {...person} />
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" className="py-20 bg-[#F1F5F9]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">¿Qué es Out Together?</h2>
@@ -64,22 +90,18 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="destinations" className="py-20 bg-[#F1F5F9]">
+            <section id="destinations" className="py-20 bg-white">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">Nuestros Destinos</h2>
                         <p className="text-lg text-[#64748B] max-w-2xl mx-auto">Descubre los increíbles lugares donde podrás trabajar, conectar y disfrutar con Out Together.</p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {destinationData.map((item) => (
-                            <DestinationCard key={item.title} {...item} />
-                        ))}
-                    </div>
+                    <DestinationsCarousel />
                 </div>
             </section>
 
-            <section id="register" className="py-20 bg-white">
+            <section id="register" className="py-20 bg-[#F1F5F9]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="max-w-3xl mx-auto">
                         <div className="text-center mb-12">
@@ -98,7 +120,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="testimonials" className="py-20 bg-[#F1F5F9]">
+            <section id="testimonials" className="py-20 bg-white">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">Lo que dicen nuestros viajeros</h2>

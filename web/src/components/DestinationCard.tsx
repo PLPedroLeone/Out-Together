@@ -1,20 +1,17 @@
-import Image from "next/image";
+import { DestinationImagesCarousel } from "./DestinationImagesCarousel";
 
 interface DestinationCardProps {
     title: string;
     country: string;
-    image: string;
-    alt: string;
+    images: { src: string; alt: string }[]
     description: string;
     brochure: string;
 };
 
-export function DestinationCard({ title, country, image, alt, description, brochure }: DestinationCardProps) {
+export function DestinationCard({ title, country, images, description, brochure }: DestinationCardProps) {
     return (
         <div className="rounded-xl overflow-hidden border border-[#E2E8F0] bg-white shadow-sm">
-            <div className="relative h-64 w-full">
-                <Image src={image} alt={alt} fill className="object-cover" />
-            </div>
+            <DestinationImagesCarousel images={images}/>
 
             <div className="p-6">
                 <h3 className="text-2xl font-semibold mb-1 text-[#020817]">{title}</h3>
