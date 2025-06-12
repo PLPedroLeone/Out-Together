@@ -13,8 +13,8 @@ export default function NavBar() {
                 </Link>
 
                 <nav className="hidden md:flex gap-6 text-sm font-medium text-[#020817]">
-                    <Link href="#about-us" className="hover:text-[#0369A0] transition-colors">¿Quienes Somos?</Link>
                     <Link href="#about" className="hover:text-[#0369A0] transition-colors">¿Qué es?</Link>
+                    <Link href="#about-us" className="hover:text-[#0369A0] transition-colors">¿Quienes Somos?</Link>
                     <Link href="#destinations" className="hover:text-[#0369A0] transition-colors">Destinos</Link>
                     <Link href="#register" className="hover:text-[#0369A0] transition-colors">Contáctanos</Link>
                 </nav>
