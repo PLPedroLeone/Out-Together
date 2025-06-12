@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -7,7 +8,9 @@ export default function NavBar() {
     return (
         <header className="fixed top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md">
             <div className="container px-21 mx-auto flex h-16 items-center justify-between px-4">
-                <span className="text-xl font-bold text-[#020817]">Out Together</span>
+                <Link href="/">
+                    <Image src="/Icons/Logo.jpeg" alt="Out Together Logo" width={83} height={40} priority />
+                </Link>
 
                 <nav className="hidden md:flex gap-6 text-sm font-medium text-[#020817]">
                     <Link href="#about-us" className="hover:text-[#0369A0] transition-colors">¿Quienes Somos?</Link>
