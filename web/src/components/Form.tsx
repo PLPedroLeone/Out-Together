@@ -3,6 +3,7 @@
 import { RegisterFormValues, registerSchema } from "@/schemas/formValidationSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser"
 
 export function RegisterForm() {
     const {
@@ -17,8 +18,27 @@ export function RegisterForm() {
     });
 
     const onSubmit = (data: RegisterFormValues) => {
-        console.log("Formulario enviado", data);
-        reset();
+        const serviceId = "service_8lsizd6"
+        const templateId = "template_lny5r9l"
+        const publicKey = "eI6_uB2EZNvfo-LUR"
+        
+        const templateParams = {
+            name: data.name,
+            email: data.email,
+            destination: data.destination,
+            comments: data.comments || "",
+        };
+
+        emailjs
+            .send(serviceId, templateId, templateParams, publicKey)
+            .then(() => {
+                alert("Formulario enviado con éxito 🎉")
+                reset();
+            })
+            .catch((error) => {
+                console.error("Error al enviar el formulario:", error)
+                alert("Ocurrio un error al enviar el formulario. Intente más tarde.")
+            });        
     };
 
     return (
