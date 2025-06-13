@@ -11,7 +11,7 @@ interface AboutUsCardProps {
 
 export function AboutUsCard({ name, role, reason, curiosity, image, alt }: AboutUsCardProps) {
     return (
-        <div className="bg-white border max-w-[300px] border-[#E2E8F0] rounded-xl shadow p-6 flex flex-col items-center text-center">
+        <div className="bg-white border min-w-[300px] max-w-[300px] border-[#E2E8F0] rounded-xl shadow p-6 flex flex-col items-center text-center">
             <div className="w-16 h-16 rounded-full overflow-hidden mb-4">
                 <Image src={image} alt={alt} width={64} height={64} className="object-cover" />
             </div>

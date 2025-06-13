@@ -9,7 +9,7 @@ export default function NavBar() {
         <header className="fixed top-0 z-50 w-full border-b border-gray-200 bg-[#f1e0d6]/80 backdrop-blur-md">
             <div className="container px-21 mx-auto flex h-16 items-center justify-between px-4">
                 <Link href="#hero">
-                    <Image src="/Icons/Logo.jpeg" alt="Out Together Logo" width={83} height={40} priority />
+                    <Image src="/Icons/Logo.png" alt="Out Together Logo" width={83} height={40} priority />
                 </Link>
 
                 <nav className="hidden md:flex gap-20 text-sm font-medium text-[#020817]">

@@ -12,7 +12,7 @@ export const aboutUsData = [
         role: "CMO",
         reason: "Lidera la estrategia de marca y expansión.",
         curiosity: "Tiene una colección de fotos de cafés en el mundo.",
-        image: "",
+        image: "/DestinationImage.svg",
         alt: "Atilio Maculus",
     },
     {
@@ -20,7 +20,7 @@ export const aboutUsData = [
         role: "CFO",
         reason: "Organiza las finanzas para que todo sea posible.",
         curiosity: "Nunca viaja sin su mate.",
-        image: "",
+        image: "/DestinationImage.svg",
         alt: "Andrea Volpi",
     },
     {
@@ -28,7 +28,7 @@ export const aboutUsData = [
         role: "COO",
         reason: "Hace que cada viaje funcione como un reloj.",
         curiosity: "Practica yoga desde hace 10 años.",
-        image: "",
+        image: "/DestinationImage.svg",
         alt: "Livia Crepaldi",
     },
     {
@@ -36,7 +36,7 @@ export const aboutUsData = [
         role: "Coordinador",
         reason: "Conecta a las personas y resuelve en el momento.",
         curiosity: "Siempre lleva una cámara analógica consigo.",
-        image: "",
+        image: "/DestinationImage.svg",
         alt: "Facundo Perez",
     }
 ]
