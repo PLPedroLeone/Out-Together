@@ -127,7 +127,7 @@ export default function LandingPage() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">
+                    <div className="flex gap-4 justify-center overflow-x-auto md:overflow-visible px-2">
                         {aboutUsData.map((person) => (
                             <AboutUsCard key={person.name} {...person} />
                         ))}

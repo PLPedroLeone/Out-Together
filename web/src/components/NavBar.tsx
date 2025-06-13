@@ -12,7 +12,7 @@ export default function NavBar() {
                     <Image src="/Icons/Logo.jpeg" alt="Out Together Logo" width={83} height={40} priority />
                 </Link>
 
-                <nav className="hidden md:flex gap-6 text-sm font-medium text-[#020817]">
+                <nav className="hidden md:flex gap-20 text-sm font-medium text-[#020817]">
                     <Link href="#about" className="hover:text-[#0369A0] transition-colors">¿Qué es?</Link>
                     <Link href="#about-us" className="hover:text-[#0369A0] transition-colors">¿Quienes Somos?</Link>
                     <Link href="#destinations" className="hover:text-[#0369A0] transition-colors">Destinos</Link>
