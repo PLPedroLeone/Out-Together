@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 
 import { destinationData } from "@/data/destinationData";
@@ -6,7 +5,6 @@ import useEmblaCarousel from "embla-carousel-react"
 import React, { useEffect, useState } from "react"
 import { DestinationCard } from "./DestinationCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Autoplay from "embla-carousel-autoplay";
 
 export default function DestinationsCarousel() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'center', loop: false });
@@ -29,7 +27,7 @@ export default function DestinationsCarousel() {
     }, [emblaApi]);
 
     return (
-        <div className="relative w-full bg-[#F7FFFC] py-10">
+        <div className="relative w-full bg-[#F5E9E3] py-10">
             <div className="relative max-w-[1200px] mx-auto">
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex gap-5">

@@ -3,24 +3,19 @@ import { AboutUsCard } from "@/components/AboutUsCard";
 import DestinationsCarousel from "@/components/DestinationsCarousel";
 import { Footer } from "@/components/Footer";
 import { RegisterForm } from "@/components/Form";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { aboutData } from "@/data/aboutData";
 import { aboutUsData } from "@/data/aboutUsData";
+import { heroImages } from "@/data/heroImagesData";
 import { testimonialsData } from "@/data/testimonialsData";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function LandingPage() {
     return (
         <>
-            <section id="hero" className="relative pt-16 min-h-[90vh] flex items-center">
-                <Image 
-                    src="/HeroImage.svg"
-                    alt="Trabajadores remotos en un entorno natural"
-                    fill
-                    className="object-cover brightness-[0.7]"
-                    priority
-                />                
+            <section id="hero" className="relative pt-16 min-h-[90vh] flex items-center overflow-hidden">
+                <HeroCarousel images={heroImages} />
 
                 <div className="container px-21 relative z-10 mx-auto px-4 py-24 text-white">
                     <div className="max-w-3xl">
@@ -48,7 +43,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="about" className="py-20 bg-[#F5E9E3]">
+            <section id="about" className="py-20 bg-[#F7FFFC]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">¿Qué es Out Together?</h2>
@@ -65,7 +60,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="destinations" className="py-20 bg-[#F7FFFC]">
+            <section id="destinations" className="py-20 bg-[#F5E9E3]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">Nuestros Destinos</h2>
@@ -76,7 +71,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="register" className="py-20 bg-[#F5E9E3]">
+            <section id="register" className="py-20 bg-[#F7FFFC]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="max-w-3xl mx-auto">
                         <div className="text-center mb-12">
@@ -95,7 +90,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="testimonials" className="py-20 bg-[#F7FFFC]">
+            <section id="testimonials" className="py-20 bg-[#F5E9E3]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">Lo que dicen nuestros viajeros</h2>
@@ -110,7 +105,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="about-us" className="py-20 bg-[#F5E9E3]">
+            <section id="about-us" className="py-20 bg-[#F7FFFC]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16 max-w-5xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#020817]">Quiénes Somos</h2>
