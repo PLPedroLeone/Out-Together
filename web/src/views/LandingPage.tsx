@@ -48,7 +48,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="about" className="py-20 bg-[#f1e0d6]">
+            <section id="about" className="py-20 bg-[#F5E9E3]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">¿Qué es Out Together?</h2>
