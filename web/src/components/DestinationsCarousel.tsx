@@ -29,7 +29,7 @@ export default function DestinationsCarousel() {
     }, [emblaApi]);
 
     return (
-        <div className="relative w-full bg-white py-10">
+        <div className="relative w-full bg-[#F7FFFC] py-10">
             <div className="relative max-w-[1200px] mx-auto">
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex gap-5">
@@ -42,13 +42,13 @@ export default function DestinationsCarousel() {
                 </div>
                 
                 {canScrollPrev && (
-                    <button onClick={scrollPrev} className="absolute top-1/2 -translate-y-1/2 -left-12 z-10 bg-white p-2 rounded-full shadow hover:bg-gray-100" aria-label="Anterior">
+                    <button onClick={scrollPrev} className="absolute top-1/2 -translate-y-1/2 -left-12 z-10 bg-white p-2 cursor-pointer rounded-full shadow hover:bg-gray-100" aria-label="Anterior">
                         <ChevronLeft size={24} />
                     </button>
                 )}
 
                 {canScrollNext && (
-                    <button onClick={scrollNext} className="absolute top-1/2 -translate-y-1/2 -right-12 z-10 bg-white p-2 rounded-full shadow hover:bg-gray-100" aria-label="Siguiente">
+                    <button onClick={scrollNext} className="absolute top-1/2 -translate-y-1/2 -right-12 z-10 cursor-pointer bg-white p-2 rounded-full shadow hover:bg-gray-100" aria-label="Siguiente">
                         <ChevronRight size={24} />
                     </button>
                 )}

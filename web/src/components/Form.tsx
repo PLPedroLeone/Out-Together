@@ -26,8 +26,8 @@ export function RegisterForm() {
 
         try {
             await emailjs.send(
-                "service_7bv12nh",
-                "template_hhr2sie",
+                "service_kegddxe",
+                "template_lny5r9l",
                 {
                     name: data.name,
                     email: data.email,
@@ -82,12 +82,12 @@ export function RegisterForm() {
                     className="w-full border border-[#E2E8F0] rounded-md p-2 "
                 >
                     <option value="">Selecciona un destino</option>
-                    <option value="rio">Río de Janeiro</option>
-                    <option value="calafate">El Calafate</option>
-                    <option value="mendoza">Mendoza</option>
-                    <option value="mendoza">Bodega Gamboa</option>
-                    <option value="mendoza">Misiones</option>
-                    <option value="any">Cualquiera</option>
+                    <option value="Rio de Janeiro">Río de Janeiro</option>
+                    <option value="El Calafate">El Calafate</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Bodega Gamboa">Bodega Gamboa</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Cualquiera">Cualquiera</option>
                 </select>
                 {errors.destination && <p className="text-red-500 text-xs">{errors.destination.message}</p>}
             </div>
@@ -105,15 +105,14 @@ export function RegisterForm() {
             <button
                 type="submit"
                 disabled={isSending}
-                className="rounded-md w-full bg-[#0369A0] px-3 py-2 text-sm font-medium text-white hover:bg-[#02587f] min-h-[40px] transition-colors"
+                className="rounded-md w-full bg-[#2a8873] px-3 py-2 text-sm font-medium text-white hover:bg-[#4a8e7c] min-h-[40px] transition-colors cursor-pointer flex justify-center items-center"
             >
                 {isSending ? (
-                    <svg className="animate-spin h-5 w-5 mr-2 text-white" viewBox="0 0 24 24">
+                    <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="white" strokeWidth="4" fill="none" />
                         <path className="opacity-75" fill="white" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
                     </svg>
-                ) : null}
-                {isSending ? "Enviando..." : "Sumate a la comunidad"}
+                ) : "Sumate a la comunidad"}
             </button>
             {message && (
                 <p

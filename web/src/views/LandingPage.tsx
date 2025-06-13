@@ -33,7 +33,7 @@ export default function LandingPage() {
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link 
                                 href="#register"
-                                className="rounded-md bg-[#0369A0] px-6 py-3 text-sm font-medium text-white hover:bg-[#02587f] transition-colors min-w-[170px] max-h-[44px] text-center"
+                                className="rounded-md bg-[#2a8873] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a8e7c] transition-colors min-w-[170px] max-h-[44px] text-center"
                             >
                                 Quiero más info
                             </Link>
@@ -48,7 +48,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="about" className="py-20 bg-white">
+            <section id="about" className="py-20 bg-[#f1e0d6]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">¿Qué es Out Together?</h2>
@@ -65,7 +65,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="destinations" className="py-20 bg-[#F1F5F9]">
+            <section id="destinations" className="py-20 bg-[#F7FFFC]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">Nuestros Destinos</h2>
@@ -76,7 +76,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="register" className="py-20 bg-white">
+            <section id="register" className="py-20 bg-[#F5E9E3]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="max-w-3xl mx-auto">
                         <div className="text-center mb-12">
@@ -95,7 +95,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="testimonials" className="py-20 bg-[#F1F5F9]">
+            <section id="testimonials" className="py-20 bg-[#F7FFFC]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">Lo que dicen nuestros viajeros</h2>
@@ -110,7 +110,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="about-us" className="py-20 bg-white">
+            <section id="about-us" className="py-20 bg-[#F5E9E3]">
                 <div className="container px-21 mx-auto px-4">
                     <div className="text-center mb-16 max-w-5xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#020817]">Quiénes Somos</h2>
@@ -135,7 +135,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="cta" className=" min-h-[356px] py-20 bg-[#0369A0] text-primary-foreground">
+            <section id="cta" className=" min-h-[356px] py-20 bg-[#0e443a] text-primary-foreground">
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para una nueva forma de trabajar?</h2>
                     <p className="text-xl mb-10 max-w-2xl mx-auto">

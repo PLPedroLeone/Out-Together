@@ -52,7 +52,7 @@ const SOCIALS = [
 
 export function Footer() {
   return (
-    <footer className="py-12 bg-[#F8FAFC] border-t">
+    <footer className="py-12 bg-[#F5E9E3] border-t">
       <div className="container px-21 mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 text-center md:text-left">
