@@ -2,7 +2,7 @@
 
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+// import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 
@@ -14,8 +14,8 @@ export function DestinationImagesCarousel({ images }: DestinationImagesCarouselP
     const [emblaRef, emblaApi] = useEmblaCarousel({loop: true}, [Autoplay()]);
     const [selectedIndex, setSelectedIndex] = useState(0);
 
-    const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
-    const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi])
+    // const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+    // const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi])
     const scrollTo = useCallback((index: number) => emblaApi?.scrollTo(index), [emblaApi])
 
     const onSelect = useCallback(() => {
@@ -41,13 +41,13 @@ export function DestinationImagesCarousel({ images }: DestinationImagesCarouselP
                 </div>
             </div>
 
-            <button onClick={scrollPrev} className="absolute top-1/2 left-2 -translate-y-1/2 bg-white/80 rounded-full p-1 shadow hover:bg-white">
+            {/* <button onClick={scrollPrev} className="absolute top-1/2 left-2 -translate-y-1/2 bg-white/80 rounded-full p-1 shadow hover:bg-white">
                     <ChevronLeft className="w-5 h-5 text-gray-800" />
             </button>
 
             <button onClick={scrollNext} className="absolute top-1/2 right-2 -translate-y-1/2 bg-white/80 rounded-full p-1 shadow hover:bg-white">
                 <ChevronRight className="w-5 h-5 text-gray-800" />
-            </button>
+            </button> */}
 
             <div className="flex justify-center gap-2 mt-2">
                 {images.map((_, idx) => (

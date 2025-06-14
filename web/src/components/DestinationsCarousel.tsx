@@ -2,7 +2,7 @@
 
 import { destinationData } from "@/data/destinationData";
 import useEmblaCarousel from "embla-carousel-react"
-import React, { useEffect, useState } from "react"
+import React, { useCallback, useEffect, useState } from "react"
 import { DestinationCard } from "./DestinationCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -10,18 +10,26 @@ export default function DestinationsCarousel() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'center', loop: false });
     const [canScrollPrev, setCanScrollPrev] = useState(false);
     const [canScrollNext, setCanScrollNext] = useState(false);
+    const [selectedIndex, setSelectedIndex] = useState(0);
+    const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
     const scrollPrev = () => emblaApi?.scrollPrev();
     const scrollNext = () => emblaApi?.scrollNext();
+
+    const scrollTo = useCallback((index: number) => {
+        emblaApi?.scrollTo(index);
+    }, [emblaApi]);
 
     useEffect(() => {
         if(!emblaApi) return;
 
         const onSelect = () => {
+            setSelectedIndex(emblaApi.selectedScrollSnap());
             setCanScrollPrev(emblaApi.canScrollPrev());
             setCanScrollNext(emblaApi.canScrollNext());
         };
 
+        setScrollSnaps(emblaApi.scrollSnapList())
         emblaApi.on('select', onSelect);
         onSelect();
     }, [emblaApi]);
@@ -50,6 +58,12 @@ export default function DestinationsCarousel() {
                         <ChevronRight size={24} />
                     </button>
                 )}
+
+                <div className="flex justify-center gap-2 mt-4">
+                    {scrollSnaps.map((_, idx) => (
+                        <button key={idx} onClick={() => scrollTo(idx)} className={`h-2 w-2 rounded-full transition-colors duration-300 ${selectedIndex === idx ? 'bg-gray-800' : 'bg-gray-400'}`} aria-label={`Ir a la tarjeta ${idx + 1}`}/>
+                    ))}
+                </div>
             </div>
         </div>
     )
