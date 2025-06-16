@@ -9,6 +9,7 @@ import { aboutData } from "@/data/aboutData";
 import { aboutUsData } from "@/data/aboutUsData";
 import { heroImages } from "@/data/heroImagesData";
 import { testimonialsData } from "@/data/testimonialsData";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function LandingPage() {
@@ -58,6 +59,25 @@ export default function LandingPage() {
                         ))}
                     </div>
                 </div>
+            </section>
+
+            <section id="meeting" className="relative pt-16 min-h-[90vh] flex items-center overflow-hidden">
+                <Image src="/destination-images/bodega/bodega-gamboa.jpg" alt="Bodega Gamboa" fill className="object-cover brightness-[0.7]" priority />
+
+                <div className="container px-21 relative z-10 mx-auto px-4 py-24 text-white">
+                    <div className="text-center max-w-5xl mx-auto">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Bodega Gamboa</h2>
+                        <p className="text-xl md:text-3xl mb-8">
+                            Nuestro punto de encuentro para que vivas una experiencia previa a los viajes y que pueda unirse a la comunidad Out Together.
+                        </p>
+                        <Link
+                            href="#register"
+                            className="inline-block rounded-md bg-[#2a8873] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a8e7c] transition-colors min-w-[170px] text-center"
+                        >
+                            Ver próximas salidas
+                        </Link>
+                    </div>
+                </div>                
             </section>
 
             <section id="destinations" className="py-20 bg-[#F5E9E3]">

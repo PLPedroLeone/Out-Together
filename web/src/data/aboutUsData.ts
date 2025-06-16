@@ -36,7 +36,7 @@ export const aboutUsData = [
         role: "Coordinador",
         reason: "Conecta a las personas y resuelve en el momento.",
         curiosity: "Siempre lleva una cámara analógica consigo.",
-        image: "/DestinationImage.svg",
+        image: "/about-us-images/facundo.pp.jpg",
         alt: "Facundo Perez",
     }
 ]

@@ -11,4 +11,8 @@ export const heroImages = [
         src: "/hero-images/mendoza-hero-carousel.jpg",
         alt: "Mendoza",
     },
+    {
+        src: "/hero-images/misiones-hero-carousel.jpg",
+        alt: "Misiones",
+    },
 ]

@@ -33,17 +33,6 @@ export const destinationData = [
         brochure:"/mendoza-brochure.pdf",
     },
     {
-        title: "Bodega Gamboa",
-        country: "Argentina",
-        images: [
-            { src: "/destination-images/bodega/bodega-destino-1.jpeg", alt:"Bodega Gamboa" }, 
-            { src: "/destination-images/bodega/bodega-destino-2.webp", alt:"Bodega Gamboa" }, 
-            { src: "/destination-images/bodega/bodega-destino-3.webp", alt:"Bodega Gamboa" },
-        ],
-        description: "Nuestro punto de encuentro para que vivas una experiencia previa a los viajes y que pueda unirse a la comunidad Out Together.",
-        brochure:"/bodega-gamboa-brochure.pdf",
-    },
-    {
         title: "Misiones",
         country: "Argentina",
         images: [
@@ -51,7 +40,7 @@ export const destinationData = [
             { src: "/destination-images/misiones/misiones-destino-2.jpg", alt:"Misiones" },
             { src: "/destination-images/misiones/misiones-destino-3.jpg", alt:"Misiones" },
         ],
-        description: "Trabaja entre viñedos con vista a la cordillera. Gastronomía, vinos y paisajes que estimulan la creatividad.",
+        description: "Conectá tu trabajo con la selva y las cataratas. Energía natural, cultura guaraní y paisajes que te renuevan cada día.",
         brochure:"/misiones-brochure.pdf",
     },
 ]

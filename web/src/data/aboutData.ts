@@ -29,8 +29,8 @@ export const aboutData: AboutItem[] = [
     },
     {
         icon: Calendar,
-        title: "5 Días de Experiencia",
-        description: "3 días laborales + 2 días de ocio, el balance perfecto entre trabajo y descanso.",
+        title: "Estadías cortas de Experiencia",
+        description: "Días laborales, días de ocio: el balance perfecto entre trabajo y descanso.",
     },
     {
         icon: MapPin,
