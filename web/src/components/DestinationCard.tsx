@@ -20,7 +20,7 @@ export function DestinationCard({ title, country, images, description, brochure 
             </div>
 
             <div className="p-6 pt-0">
-                <a href={brochure} download className="block text-center w-full border border-gray-300 text-sm py-2 px-4 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+                <a href={brochure} target="_blank" download className="block text-center w-full border border-gray-300 text-sm py-2 px-4 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
                     Ver detalles
                 </a>
             </div>

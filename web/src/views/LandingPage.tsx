@@ -62,7 +62,7 @@ export default function LandingPage() {
             </section>
 
             <section id="meeting" className="relative pt-16 min-h-[90vh] flex items-center overflow-hidden">
-                <Image src="/destination-images/bodega/bodega-gamboa.jpg" alt="Bodega Gamboa" fill className="object-cover brightness-[0.7]" priority />
+                <Image src="/destination-images/bodega/bodega-gamboa.jpg" alt="Bodega Gamboa" fill className="object-cover brightness-[0.5]" priority />
 
                 <div className="container px-21 relative z-10 mx-auto px-4 py-24 text-white">
                     <div className="text-center max-w-5xl mx-auto">
@@ -105,6 +105,15 @@ export default function LandingPage() {
                             <h3 className="text-2xl font-semibold mb-1 text-[#020817]">Solicitar información</h3>
                             <p className="text-sm text-[#64748B] mb-6">Completá tus datos y nos pondremos en contacto contigo.</p>
                             <RegisterForm />
+                        </div>
+
+                        <div className="p-6 pt-6 text-center">
+                            <p className="text-md text-[#64748B] mb-6">¿Querés agendar una reunión con el equipo?</p>
+                            <div className="flex justify-center items-center">
+                                <a href="" target="_blank" className="rounded-md w-full bg-[#2a8873] px-3 py-2 text-sm font-medium text-white hover:bg-[#4a8e7c] min-h-[40px] max-w-[200px] transition-colors cursor-pointer flex justify-center items-center">
+                                    Agendar una reunion
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

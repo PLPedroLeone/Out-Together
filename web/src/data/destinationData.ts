@@ -30,7 +30,7 @@ export const destinationData = [
             { src: "/destination-images/mendoza/mdza-destino-3.jpg", alt:"Mendoza" },
         ],
         description: "Trabaja entre viñedos con vista a la cordillera. Gastronomía, vinos y paisajes que estimulan la creatividad.",
-        brochure:"/mendoza-brochure.pdf",
+        brochure:"https://gamma.app/docs/Vivi-Mendoza-en-comunidad-Tu-Espacio-para-Trabajar-y-Renovar-Ener-mtlwrhoexkcoa64",
     },
     {
         title: "Misiones",
