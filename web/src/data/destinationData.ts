@@ -8,7 +8,7 @@ export const destinationData = [
             { src: "/destination-images/rio/rio-destino-3.jpg", alt:"Río de Janeiro" },
         ],
         description: "Trabaja con vistas al mar y disfruta de la vibrante cultura carioca. Playas, naturaleza y una energía única.",
-        brochure:"/rio-brochure.pdf",
+        brochure:"/brochures/rio-brochure.pdf",
     },
     {
         title: "El Calafate",
@@ -19,7 +19,7 @@ export const destinationData = [
             { src: "/destination-images/calafate/fte-destino-3.jpg", alt:"Calafate" }, 
         ],
         description: "Inspirate con los glaciares y la majestuosidad de la Patagonia. Naturaleza pura y paisajes impresionantes.",
-        brochure:"/calafate-brochure.pdf",
+        brochure:"/brochures/calafate-brochure.pdf",
     },
     {
         title: "Mendoza",

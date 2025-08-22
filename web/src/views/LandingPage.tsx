@@ -70,12 +70,22 @@ export default function LandingPage() {
                         <p className="text-xl md:text-3xl mb-8">
                             Nuestro punto de encuentro para que vivas una experiencia previa a los viajes y que pueda unirse a la comunidad Out Together.
                         </p>
-                        <Link
-                            href="#register"
-                            className="inline-block rounded-md bg-[#2a8873] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a8e7c] transition-colors min-w-[170px] text-center"
-                        >
-                            Ver próximas salidas
-                        </Link>
+                        <div className="flex justify-center gap-4">
+                            <a
+                                href="/brochures/rio-brochure.pdf"
+                                target="_blank" 
+                                download
+                                className="inline-block rounded-md bg-[#2a8873] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a8e7c] transition-colors min-w-[170px] text-center"
+                            >
+                                Ver detalles
+                            </a>
+                            <Link
+                                href="#register"
+                                className="inline-block rounded-md bg-[#2a8873] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a8e7c] transition-colors min-w-[170px] text-center"
+                            >
+                                Ver próximas salidas
+                            </Link>
+                        </div>
                     </div>
                 </div>                
             </section>
