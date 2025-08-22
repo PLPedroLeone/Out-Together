@@ -6,9 +6,10 @@ interface DestinationCardProps {
     images: { src: string; alt: string }[]
     description: string;
     brochure: string;
+    brochureName?: string;
 };
 
-export function DestinationCard({ title, country, images, description, brochure }: DestinationCardProps) {
+export function DestinationCard({ title, country, images, description, brochure, brochureName }: DestinationCardProps) {
     return (
         <div className="rounded-xl overflow-hidden border border-[#E2E8F0] bg-white shadow-sm">
             <DestinationImagesCarousel images={images}/>
@@ -20,7 +21,7 @@ export function DestinationCard({ title, country, images, description, brochure 
             </div>
 
             <div className="p-6 pt-0">
-                <a href={brochure} target="_blank" download className="block text-center w-full border border-gray-300 text-sm py-2 px-4 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+                <a href={brochure} target="_blank" download={brochureName ?? true} className="block text-center w-full border border-gray-300 text-sm py-2 px-4 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
                     Ver detalles
                 </a>
             </div>
