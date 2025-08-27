@@ -44,7 +44,7 @@ export const destinationData = [
             { src: "/destination-images/misiones/misiones-destino-3.jpg", alt:"Misiones" },
         ],
         description: "Conectá tu trabajo con la selva y las cataratas. Energía natural, cultura guaraní y paisajes que te renuevan cada día.",
-        brochure:"/misiones-brochure.pdf",
+        brochure:"https://gamma.app/docs/Misiones-978qnc3odc15pdk?mode=doc",
         brochureName: "OutTogether-Misiones.pdf"
     },
 ]

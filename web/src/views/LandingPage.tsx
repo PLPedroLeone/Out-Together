@@ -72,7 +72,7 @@ export default function LandingPage() {
                         </p>
                         <div className="flex justify-center gap-4">
                             <a
-                                href="/brochures/rio-brochure.pdf"
+                                href="https://gamma.app/docs/-v442ezkbg9wusab?mode=doc"
                                 target="_blank" 
                                 download
                                 className="inline-block rounded-md bg-[#2a8873] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a8e7c] transition-colors min-w-[170px] text-center"
