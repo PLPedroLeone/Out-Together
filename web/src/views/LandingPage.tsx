@@ -72,9 +72,9 @@ export default function LandingPage() {
                         </p>
                         <div className="flex justify-center gap-4">
                             <a
-                                href="https://gamma.app/docs/-v442ezkbg9wusab?mode=doc"
+                                href="/brochures/bodega-brochure.pdf"
                                 target="_blank" 
-                                download
+                                download="OutTogether-Bodega.pdf"
                                 className="inline-block rounded-md bg-[#2a8873] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a8e7c] transition-colors min-w-[170px] text-center"
                             >
                                 Ver detalles
