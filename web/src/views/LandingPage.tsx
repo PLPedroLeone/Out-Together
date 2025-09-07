@@ -45,7 +45,7 @@ export default function LandingPage() {
             </section>
 
             <section id="about" className="py-20 bg-[#F7FFFC]">
-                <div className="container px-21 mx-auto px-4">
+                <div className="mx-auto max-w-[1200px] px-8 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">¿Qué es Out Together?</h2>
                         <p className="text-lg text-[#64748B] max-w-2xl mx-auto">
@@ -64,18 +64,18 @@ export default function LandingPage() {
             <section id="meeting" className="relative pt-16 min-h-[90vh] flex items-center overflow-hidden">
                 <Image src="/destination-images/bodega/bodega-gamboa.jpg" alt="Bodega Gamboa" fill className="object-cover brightness-[0.5]" priority />
 
-                <div className="container px-21 relative z-10 mx-auto px-4 py-24 text-white">
+                <div className="relative z-10 mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 py-24 text-white">
                     <div className="text-center max-w-5xl mx-auto">
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Bodega Gamboa</h2>
                         <p className="text-xl md:text-3xl mb-8">
                             Nuestro punto de encuentro para que vivas una experiencia previa a los viajes y que pueda unirse a la comunidad Out Together.
                         </p>
-                        <div className="flex justify-center gap-4">
+                        <div className="flex justify-center items-center gap-4">
                             <a
                                 href="/brochures/bodega-brochure.pdf"
                                 target="_blank" 
                                 download="OutTogether-Bodega.pdf"
-                                className="inline-block rounded-md bg-[#2a8873] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a8e7c] transition-colors min-w-[170px] text-center"
+                                className="inline-flex h-11 items-center justify-center rounded-md bg-[#2a8873] px-6 text-sm font-medium text-white hover:bg-[#4a8e7c] transition-colors min-w-[170px] text-center"
                             >
                                 Ver detalles
                             </a>
@@ -91,7 +91,7 @@ export default function LandingPage() {
             </section>
 
             <section id="destinations" className="py-20 bg-[#F5E9E3]">
-                <div className="container px-21 mx-auto px-4">
+                <div className="mx-auto max-w-[1200px] px-8 sm:px-6 lg:px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">Nuestros Destinos</h2>
                         <p className="text-lg text-[#64748B] max-w-2xl mx-auto">Descubre los increíbles lugares donde podrás trabajar, conectar y disfrutar con Out Together.</p>
@@ -102,7 +102,7 @@ export default function LandingPage() {
             </section>
 
             <section id="register" className="py-20 bg-[#F7FFFC]">
-                <div className="container px-21 mx-auto px-4">
+                <div className="mx-auto max-w-[1200px] px-8 sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">¿Te interesa la experiencia?</h2>
@@ -130,7 +130,7 @@ export default function LandingPage() {
             </section>
 
             <section id="testimonials" className="py-20 bg-[#F5E9E3]">
-                <div className="container px-21 mx-auto px-4">
+                <div className="mx-auto max-w-[1200px] px-8 sm:px-6 lg:px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#020817]">Lo que dicen nuestros viajeros</h2>
                         <p className="text-lg text-[#64748B] max-w-2xl mx-auto">Experiencias reales de personas que ya vivieron Out Together.</p>
@@ -145,7 +145,7 @@ export default function LandingPage() {
             </section>
 
             <section id="about-us" className="py-20 bg-[#F7FFFC]">
-                <div className="container px-21 mx-auto px-4">
+                <div className="mx-auto max-w-[1200px] px-8 sm:px-6 lg:px-4">
                     <div className="text-center mb-16 max-w-5xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#020817]">Quiénes Somos</h2>
                         <p className="text-lg text-[#64748B]">
@@ -170,14 +170,16 @@ export default function LandingPage() {
             </section>
 
             <section id="cta" className=" min-h-[356px] py-20 bg-[#0e443a] text-primary-foreground">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para una nueva forma de trabajar?</h2>
-                    <p className="text-xl mb-10 max-w-2xl mx-auto">
+                <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                        ¿Listo para una nueva forma de trabajar?
+                    </h2>
+                    <p className="text-xl mb-10 max-w-2xl">
                         Únete a nuestra comunidad de nómadas digitales y transforma tu experiencia de trabajo remoto.
                     </p>
                     <Link
                         href="#register"
-                        className="rounded-sm bg-[#F1F5F9] px-8 py-3.5 text-sm font-medium text-black hover:bg-[#e2e8f0] text-black transition-colors"
+                        className="rounded-sm bg-[#F1F5F9] px-8 py-3.5 text-sm font-medium text-black hover:bg-[#e2e8f0] transition-colors"
                     >
                         Sumate a la comunidad
                     </Link>

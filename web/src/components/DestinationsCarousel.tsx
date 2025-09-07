@@ -7,7 +7,11 @@ import { DestinationCard } from "./DestinationCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function DestinationsCarousel() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'center', loop: false });
+    const [emblaRef, emblaApi] = useEmblaCarousel({
+        align: 'start',
+        loop: false,
+        containScroll: 'trimSnaps',
+    });
     const [canScrollPrev, setCanScrollPrev] = useState(false);
     const [canScrollNext, setCanScrollNext] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(0);
@@ -40,7 +44,7 @@ export default function DestinationsCarousel() {
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex gap-5">
                         {destinationData.map((destino) => (
-                            <div key={destino.title} className="flex-[0_0_32%] transition-transform duration-300 ease-in-out">
+                            <div key={destino.title} className="shrink-0 flex-[0_0_85%] sm:basis-[calc((100%_-_1.25rem)/2)] lg:basis-[calc((100%_-_2.5rem)/3)] transition-transform duration-300 ease-in-out">
                                 <DestinationCard {...destino} />
                             </div>
                         ))}
@@ -48,20 +52,20 @@ export default function DestinationsCarousel() {
                 </div>
                 
                 {canScrollPrev && (
-                    <button onClick={scrollPrev} className="absolute top-1/2 -translate-y-1/2 -left-12 z-10 bg-white p-2 cursor-pointer rounded-full shadow hover:bg-gray-100" aria-label="Anterior">
+                    <button onClick={scrollPrev} className="hidden sm:flex absolute top-1/2 -translate-y-1/2 -left-12 z-10 bg-white p-2 cursor-pointer rounded-full shadow hover:bg-gray-100" aria-label="Anterior">
                         <ChevronLeft size={24} />
                     </button>
                 )}
 
                 {canScrollNext && (
-                    <button onClick={scrollNext} className="absolute top-1/2 -translate-y-1/2 -right-12 z-10 cursor-pointer bg-white p-2 rounded-full shadow hover:bg-gray-100" aria-label="Siguiente">
+                    <button onClick={scrollNext} className="hidden sm:flex absolute top-1/2 -translate-y-1/2 -right-12 z-10 cursor-pointer bg-white p-2 rounded-full shadow hover:bg-gray-100" aria-label="Siguiente">
                         <ChevronRight size={24} />
                     </button>
                 )}
 
                 <div className="flex justify-center gap-2 mt-4">
                     {scrollSnaps.map((_, idx) => (
-                        <button key={idx} onClick={() => scrollTo(idx)} className={`h-2 w-2 rounded-full transition-colors duration-300 ${selectedIndex === idx ? 'bg-gray-800' : 'bg-gray-400'}`} aria-label={`Ir a la tarjeta ${idx + 1}`}/>
+                        <button key={idx} onClick={() => scrollTo(idx)} className={`h-3 w-3 rounded-full transition-colors duration-300 ${selectedIndex === idx ? 'bg-gray-800' : 'bg-gray-300'}`} aria-label={`Ir a la tarjeta ${idx + 1}`}/>
                     ))}
                 </div>
             </div>
