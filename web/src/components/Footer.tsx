@@ -17,7 +17,7 @@ const SOCIALS = [
     ),
   },
   {
-    href: "#",
+    href: "https://www.instagram.com/out.together2026?utm_source=qr&igsh=cGx6aXFpZ2dtZHNj",
     label: "Instagram",
     icon: (
       <svg
@@ -64,13 +64,13 @@ export function Footer() {
             <div>
               <h3 className="font-semibold mb-2">Contacto</h3>
               <p className="text-sm text-[#64748B]">pfm.out.together@gmail.com</p>
-              <p className="text-sm text-[#64748B]">+54 11 1234-5678</p>
+              <p className="text-sm text-[#64748B]">+54 9 11 3122-1302</p>
             </div>
             <div>
               <h3 className="font-semibold mb-2">Síguenos</h3>
               <div className="flex justify-center md:justify-start gap-4">
                 {SOCIALS.map((item, i) => (
-                  <Link key={i} href={item.href} aria-label={item.label} className="text-[#64748B] hover:text-[#0369A0] transition-colors">
+                  <Link key={i} href={item.href} target="_blank" aria-label={item.label} className="text-[#64748B] hover:text-[#0369A0] transition-colors">
                     {item.icon}
                   </Link>
                 ))}

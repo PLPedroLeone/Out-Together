@@ -120,7 +120,7 @@ export default function LandingPage() {
                         <div className="p-6 pt-6 text-center">
                             <p className="text-md text-[#64748B] mb-6">¿Querés agendar una reunión con el equipo?</p>
                             <div className="flex justify-center items-center">
-                                <a href="" target="_blank" className="rounded-md w-full bg-[#2a8873] px-3 py-2 text-sm font-medium text-white hover:bg-[#4a8e7c] min-h-[40px] max-w-[200px] transition-colors cursor-pointer flex justify-center items-center">
+                                <a href="https://calendly.com/pfm-out-together/30min" target="_blank" className="rounded-md w-full bg-[#2a8873] px-3 py-2 text-sm font-medium text-white hover:bg-[#4a8e7c] min-h-[40px] max-w-[200px] transition-colors cursor-pointer flex justify-center items-center">
                                     Agendar una reunion
                                 </a>
                             </div>
