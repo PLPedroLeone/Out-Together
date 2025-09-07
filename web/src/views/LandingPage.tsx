@@ -161,10 +161,10 @@ export default function LandingPage() {
                         </p>
                     </div>
 
-                    <div className="flex gap-2 justify-center overflow-x-auto md:overflow-visible px-2">
-                        {aboutUsData.map((person) => (
-                            <AboutUsCard key={person.name} {...person} />
-                        ))}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-20 justify-center justify-items-center">
+                        {aboutUsData.map((person) => ( 
+                            <AboutUsCard key={person.name} {...person} /> 
+                        ))} 
                     </div>
                 </div>
             </section>
