@@ -145,7 +145,7 @@ export default function LandingPage() {
             </section>
 
             <section id="about-us" className="py-20 bg-[#F7FFFC]">
-                <div className="mx-auto max-w-[1200px] px-8 sm:px-6 lg:px-4">
+                <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16 max-w-5xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#020817]">Quiénes Somos</h2>
                         <p className="text-lg text-[#64748B]">
