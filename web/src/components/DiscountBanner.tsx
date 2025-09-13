@@ -120,7 +120,7 @@ export function DiscountBanner({ targetId = 'destinations', localStorageTtlMs = 
             10% OFF para vos y tu amigo!
           </h3>
           <p className="mt-2 text-sm text-[#475569]">
-            Dejanos tus datos y obtené el descuento para nuestro primer viaje en 2026!.
+            Dejanos tus datos y obtené el descuento para nuestro primer viaje en 2026!
           </p>
 
           <div className="mt-6 flex gap-3 justify-center">
@@ -158,10 +158,10 @@ export function DiscountBanner({ targetId = 'destinations', localStorageTtlMs = 
         "
       >
         <h3 id="discount-title-mobile" className="text-xl font-bold text-[#020817]">
-          10% OFF para vos y un amigo
+          10% OFF para vos y tu amigo!
         </h3>
         <p className="mt-1 text-sm text-[#475569]">
-          Dejanos tus datos y te enviamos el beneficio.
+          Dejanos tus datos y obtené el descuento para nuestro primer viaje en 2026!
         </p>
 
         <div className="mt-4 flex gap-2">
