@@ -1,6 +1,7 @@
 import { AboutCard } from "@/components/AboutCard";
 import { AboutUsCard } from "@/components/AboutUsCard";
 import DestinationsCarousel from "@/components/DestinationsCarousel";
+import { DiscountBanner } from "@/components/DiscountBanner";
 import { Footer } from "@/components/Footer";
 import { RegisterForm } from "@/components/Form";
 import { HeroCarousel } from "@/components/HeroCarousel";
@@ -100,6 +101,8 @@ export default function LandingPage() {
                     <DestinationsCarousel />
                 </div>
             </section>
+
+            <DiscountBanner  />
 
             <section id="register" className="py-20 bg-[#F7FFFC]">
                 <div className="mx-auto max-w-[1200px] px-8 sm:px-6 lg:px-8">
